@@ -1,27 +1,31 @@
 
+import java.awt.*;
+import java.awt.event.*;
+//import sun.java2d.*;
+import javax.swing.*;
 
 public class Sprite{
     int x, y, width, height;
 
-    public moveup(int distance){
+    public void moveup(int distance){
         y -= distance;
     }
-    public moveleft(int distance){
+    public void moveleft(int distance){
         x -= distance;
     }
-    public moveRight(int distance){
+    public void moveRight(int distance){
         x += distance;
     }
-    public moveDown(int distance){
-        x += distance
+    public void moveDown(int distance){
+        x += distance;
     }
-
-    public sprite (int x, int y, int width, int height, Color color){
+    Color color = Color.RED;
+    public Sprite (int x, int y, int width, int height, Color color){
         this.x = x;
         this.y = y;
         this.width = width;
         this.height = height;
-        this.color = color;
+        this.color =  color;
     }
 
     public void paint(Gracics g){
